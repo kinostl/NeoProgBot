@@ -15,7 +15,7 @@ client.on('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`)
 })
 
-client.on('message', msg => {
+client.on('message', async (msg) => {
 	if (msg.startsWith(prefix) {
 		//This assumes that anything starting with > might be a command, and that whatever is after > is the command (one string)
 		let msgFuncId, msgInput = msg.content.split(' ',1)
