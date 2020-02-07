@@ -3,10 +3,10 @@ const prefix=">"
 const DiscordToken=process.env.token
 
 //Code
-const Datastore = require('nedb')
+const Datastore = require('nedb') //https://github.com/louischatriot/nedb#basic-querying
 const db = new Datastore({ filename: './db/chips' })
 
-const Discord = require('discord.js')
+const Discord = require('discord.js') //https://discordjs.guide/ https://discord.js.org/#/
 const client = new Discord.Client()
 
 const msgFunc= require('./msgFunc')
