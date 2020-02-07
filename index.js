@@ -19,7 +19,7 @@ client.on('message', async (msg) => {
 	if (msg.startsWith(prefix) {
 		//This assumes that anything starting with > might be a command, and that whatever is after > is the command (one string)
 	    	//substring removes the prefix
-		const msgFuncId, msgInput = msg.content..substring(1).split(' ',1)
+		const msgFuncId, msgInput = msg.content.substring(1).split(' ',1)
 
 		//msgFunc is an object full of functions that we've imported
 		const msgFunc[msgFuncId]
