@@ -18,11 +18,8 @@ client.on('ready', () => {
 client.on('message', async (msg) => {
 	if (msg.startsWith(prefix) {
 		//This assumes that anything starting with > might be a command, and that whatever is after > is the command (one string)
-		let msgFuncId, msgInput = msg.content.split(' ',1)
-
-		//clean up the `>chip` command so that it turns into the `chip` id
-		msgFuncId = msgFuncId.substring(1)
-
+	    	//substring removes the prefix
+		const msgFuncId, msgInput = msg.content..substring(1).split(' ',1)
 
 		//msgFunc is an object full of functions that we've imported
 		const msgFunc[msgFuncId]
